@@ -27,3 +27,15 @@ const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log(isSum50)
 console.log(isTwoOdd)
 console.log(isOver25)
+
+const isDivisibleBy5 = (n1%5) + (n2%5) + (n3%5) + (n4%5) >= 0
+console.log("is each divisible by 5?", isDivisibleBy5)
+
+const firstIsLargerThanLast = (n1 > n4)
+console.log("is first larger than last?", firstIsLargerThanLast)
+
+const differenceBetweenFirstAndSecond = n2 - n1
+const productOfDifferenceAndThird = differenceBetweenFirstAndSecond * n3
+const remainder = productOfDifferenceAndThird / n4
+console.log("remainder", remainder)
+
