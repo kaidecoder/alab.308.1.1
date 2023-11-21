@@ -18,15 +18,15 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+let isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
 // ways of handling it with other data structures
 
-console.log(isSum50)
-console.log(isTwoOdd)
-console.log(isOver25)
+console.log("is the sum equal to 50", isSum50)
+console.log("are there at least two odd numbers?", isTwoOdd)
+console.log("are any numbers larger than 25?", isOver25)
 
 const isDivisibleBy5 = (n1%5) + (n2%5) + (n3%5) + (n4%5) >= 0
 console.log("is each divisible by 5?", isDivisibleBy5)
@@ -39,3 +39,5 @@ const productOfDifferenceAndThird = differenceBetweenFirstAndSecond * n3
 const remainder = productOfDifferenceAndThird / n4
 console.log("remainder", remainder)
 
+isOver25 = (n1 && n2 && n3 && n4) > 25;
+console.log("changed", isOver25)
